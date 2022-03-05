@@ -1,0 +1,74 @@
+:root{
+    --red-color: hsl(0, 78%, 62%);
+    --cyan-color: hsl(180, 62%, 55%);
+    --orange-color: hsl(34, 97%, 64%);
+    --blue-color: hsl(212, 86%, 64%);
+    --very-dark-blue: hsl(234, 12%, 34%);
+    --grayish-blue: hsl(229, 6%, 66%);
+    --very-light-gray: hsl(0, 0%, 98%);
+}
+body{
+    font-size: 15px;
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--grayish-blue);
+}
+
+h1{
+    font-weight: 400;
+}
+
+h1>span{
+    font-weight: 600;
+}
+
+.main{
+    min-height: 100vh;
+}
+
+.header__title{
+    max-width: 500px;
+    display: block;
+    margin: auto;
+    text-align: center;
+}
+
+.card__feature{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card{
+    width: 300px;
+    margin: 16px;
+    background-color: var(--very-light-gray);
+    padding: 16px;
+    height: 200px;
+    box-shadow: 3px 3px 10px var(--very-dark-blue);
+}
+.card__img{
+    float: right;
+}
+.card--success{
+    border-top: 5px solid var(--cyan-color);
+}
+.card--danger{
+    border-top: 5px solid var(--red-color);
+    margin-bottom: 30px;
+}
+.card--warning{
+    border-top: 5px solid var(--orange-color);
+}
+.card--primary{
+    border-top: 5px solid var(--blue-color);
+}
+
+@media screen and (max-width: 768px) {
+    h1{
+        font-size: 1.8rem;
+    }
+    .card__feature{
+        flex-direction: column;
+        margin: 30px;
+    }
+}
